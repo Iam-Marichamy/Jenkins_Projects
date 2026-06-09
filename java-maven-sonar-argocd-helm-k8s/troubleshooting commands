@@ -1,0 +1,48 @@
+ minikube start --driver=docker
+  549  kubectl get pods
+  550  docker ps
+  551  curl -sL https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.44.0/install.sh | bash -s v0.44.0
+  552  kubectl get pods
+  553  kubectl get pods -n operators
+  554  kubectl get pods -n operator
+  555  kubectl get pods -n operators
+  556  kubectl create -f https://operatorhub.io/install/argocd-operator.yaml
+  557  kubectl get csv -n operators
+  558  ls
+  559  cd /home/docker
+  560  ls
+  561  vi argocd-basic.yaml
+  562  cat argocd-basic.yaml
+  563  vi argocd-basic.yaml
+  564  cat argocd-basic.yaml
+  565  kubectl apply -f argocd-basic.yaml
+  566  kubectl get pods
+  567  vi argocd-basic.yaml
+  568  kubectl apply -f argocd-basic.yaml
+  569  kubectl get pods
+  570  kubectl get svc
+  571  '
+  572
+  573  kubectl edit svc example-argocd-server
+  574  kubectl get svc
+  575  kubectl patch argocd example-argocd --type='merge' -p='{"spec":{"server":{"service":{"type":"NodePort"}}}}
+  576  kubectl patch service example-argocd-server --type='merge' -p='{"spec":{"type":"NodePort"}}'
+  577  kubectl patch argocd example-argocd --type='merge' -p='{"spec":{"server":{"service":{"type":"NodePort"}}}}
+  578  kubectl get svc
+  579  kubectl get pods
+  580  kubectl get svc example-argocd-server -o yaml
+  581  kubectl edit ArgoCD example-argocd -n default
+  582  kubectl patch ArgoCD example-argocd -n default --type merge -p '{"spec": {"server": {"service": {"type": "NodePort"}}}}'
+  583  kubectl get svc
+  584  kubectl get pods
+  585  minikube service argocd-server
+  586  minikube service list
+  587  curl -v http://192.168.49.2:30401
+  588  systemctl status firewalld
+  589  curl -v http://192.168.49.2:30401
+  590  curl -vk https://192.168.49.2:30401
+  591  minikube service example-argocd-server --url
+  592  kubectl get pods
+  593  kubectl get svc
+  594  systemctl status firewalld
+  595  kubectl port-forward svc/example-argocd-server -n default --address 0.0.0.0 8443:443
