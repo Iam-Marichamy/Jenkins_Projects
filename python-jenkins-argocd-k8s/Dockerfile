@@ -1,5 +1,5 @@
-FROM python:3.10
-RUN pip install django==3.2
+FROM python:3
+RUN pip install django>=5.2
 
 COPY . .
 
