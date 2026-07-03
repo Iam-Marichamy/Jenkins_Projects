@@ -17,7 +17,7 @@ spec:
       containers:
       - name: spring-boot-app
 <<<<<<< HEAD
-        image: ramesh955/ultimate-cicd:replaceImageTag
+        image: ramesh955/ultimate-cicd:4
         
 =======
         image: ramesh955/ultimate-cicd:5
