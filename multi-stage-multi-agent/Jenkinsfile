@@ -7,6 +7,7 @@ pipeline {
             }
             steps {
             sh 'mvn --version'
+            echo '1234'   
             }
         }
         stage ( 'Front_end' ) {
@@ -19,4 +20,4 @@ pipeline {
             }
         }
     }
-}}
+}
